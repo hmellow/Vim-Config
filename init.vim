@@ -97,12 +97,13 @@ set encoding=utf-8
 set guifont=Hack
 colorscheme minimalist
 
-" Directories.
-set backup
-set writebackup
-set backupdir=~/.local/share/nvim/backup
-set directory=~/.local/share/nvim/swap
-set undodir=~/.local/share/nvim/undo
+"" Directories.
+"" Currently non functional
+" set backup
+" set writebackup
+" set backupdir=~/.local/share/nvim/backup
+" set directory=~/.local/share/nvim/swap
+" set undodir=~/.local/share/nvim/undo
 
 " Airline.
 let g:airline_theme='minimalist'
