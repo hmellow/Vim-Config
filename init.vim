@@ -1,4 +1,3 @@
-
 " General.
 set nocompatible
 set number
@@ -76,17 +75,16 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 " Pluginin.
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'dikiaap/minimalist'
-Plugin 'editorconfig/editorconfig-vim'
-Plugin 'junegunn/vim-plug'
-Plugin 'mattn/emmet-vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'sheerun/vim-polyglot'
-Plugin 'tpope/vim-fugitive'
-Plugin 'hugolgst/vimsence'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-syntastic/syntastic'
+Plugin 'ctrlpvim/ctrlp.vim' " File finder
+Plugin 'dikiaap/minimalist' " Darker color scheme
+Plugin 'editorconfig/editorconfig-vim' " Additional configuration
+Plugin 'scrooloose/nerdtree' " File tree
+Plugin 'sheerun/vim-polyglot' " Additional language packs
+Plugin 'tpope/vim-fugitive' " Git
+Plugin 'hugolgst/vimsence' " Discord RPC
+Plugin 'vim-airline/vim-airline' " Tabline improvement
+Pluhin 'vim-airline/vim-airline-themes' " Additional airline themes
+Plugin 'vim-syntastic/syntastic' " Syntax checker
 call vundle#end()
 
 " Colors, Fonts, and Syntax.
@@ -97,8 +95,8 @@ set encoding=utf-8
 set guifont=Hack
 colorscheme minimalist
 
+
 "" Directories.
-"" Currently non functional
 " set backup
 " set writebackup
 " set backupdir=~/.local/share/nvim/backup
@@ -106,7 +104,7 @@ colorscheme minimalist
 " set undodir=~/.local/share/nvim/undo
 
 " Airline.
-let g:airline_theme='minimalist'
+let g:airline_theme='simple'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#branch#enabled = 1
@@ -134,3 +132,10 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0g
 
+" Vimsence
+let g:vimsence_small_text = 'NeoVim'
+let g:vimsence_small_image = 'neovim'
+let g:vimsence_editing_details = 'Editing: {}'
+let g:vimsence_editing_state = 'Working on: {}'
+let g:vimsence_file_explorer_text = 'In NERDTree'
+let g:vimsence_file_explorer_details = 'Looking for files'
