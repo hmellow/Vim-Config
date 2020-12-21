@@ -1,4 +1,4 @@
-" General.
+" General
 set nocompatible
 set number
 set autoindent " Copy indent from last line when starting new line
@@ -71,6 +71,11 @@ set wildmode=list:longest " Complete only until point of ambiguity
 set winminheight=0 " Allow splits to be reduced to a single line
 set wrapscan " Searches wrap around end of file
 
+" Python
+let g:python_host_prog = '/Library/Frameworks/Python.framework/Versions/2.7'
+let g:python_host_prog = '/Library/Frameworks/Python.framework/Versions/3.8'
+
+
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
@@ -78,13 +83,14 @@ call vundle#begin()
 Plugin 'ctrlpvim/ctrlp.vim' " File finder
 Plugin 'dikiaap/minimalist' " Darker color scheme
 Plugin 'editorconfig/editorconfig-vim' " Additional configuration
-Plugin 'scrooloose/nerdtree' " File tree
+Plugin 'scrooloose/nerdtree' " Filetree
 Plugin 'sheerun/vim-polyglot' " Additional language packs
 Plugin 'tpope/vim-fugitive' " Git
 Plugin 'hugolgst/vimsence' " Discord RPC
 Plugin 'vim-airline/vim-airline' " Tabline improvement
-Pluhin 'vim-airline/vim-airline-themes' " Additional airline themes
+Plugin 'vim-airline/vim-airline-themes' " Additional airline themes
 Plugin 'vim-syntastic/syntastic' " Syntax checker
+Plugin 'jiangmiao/auto-pairs' " Auto pairs stuff like {}
 call vundle#end()
 
 " Colors, Fonts, and Syntax.
@@ -136,6 +142,6 @@ let g:syntastic_check_on_wq = 0g
 let g:vimsence_small_text = 'NeoVim'
 let g:vimsence_small_image = 'neovim'
 let g:vimsence_editing_details = 'Editing: {}'
-let g:vimsence_editing_state = 'Working on: {}'
+let g:vimsence_editing_state = 'Project: {}'
 let g:vimsence_file_explorer_text = 'In NERDTree'
 let g:vimsence_file_explorer_details = 'Looking for files'
