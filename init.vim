@@ -89,7 +89,8 @@ Plug 'hugolgst/vimsence' " Discord RPC
 Plug 'vim-airline/vim-airline' " Tabline improvement
 Plug 'vim-airline/vim-airline-themes' " Additional airline themes
 Plug 'vim-syntastic/syntastic' " Syntax checker
-Plug 'jiangmiao/auto-pairs' " Auto pairs stuff like {}
+Plug 'jiangmiao/auto-pairs' " Autp pairs quotes and parentheticals
+Plug 'valloric/youcompleteme' " Code completion
 call plug#end()
 
 " Colors, Fonts, and Syntax.
@@ -99,14 +100,6 @@ set t_Co=256
 set encoding=utf-8
 set guifont=Hack
 colorscheme minimalist
-
-
-"" Directories.
-" set backup
-" set writebackup
-" set backupdir=~/.local/share/nvim/backup
-" set directory=~/.local/share/nvim/swap
-" set undodir=~/.local/share/nvim/undo
 
 " Airline.
 let g:airline_theme='simple'
