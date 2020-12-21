@@ -76,22 +76,21 @@ let g:python_host_prog = '/Library/Frameworks/Python.framework/Versions/2.7'
 let g:python_host_prog = '/Library/Frameworks/Python.framework/Versions/3.8'
 
 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+call plug#begin('~/.vim/plugged')
 
-" Pluginin.
-Plugin 'ctrlpvim/ctrlp.vim' " File finder
-Plugin 'dikiaap/minimalist' " Darker color scheme
-Plugin 'editorconfig/editorconfig-vim' " Additional configuration
-Plugin 'scrooloose/nerdtree' " Filetree
-Plugin 'sheerun/vim-polyglot' " Additional language packs
-Plugin 'tpope/vim-fugitive' " Git
-Plugin 'hugolgst/vimsence' " Discord RPC
-Plugin 'vim-airline/vim-airline' " Tabline improvement
-Plugin 'vim-airline/vim-airline-themes' " Additional airline themes
-Plugin 'vim-syntastic/syntastic' " Syntax checker
-Plugin 'jiangmiao/auto-pairs' " Auto pairs stuff like {}
-call vundle#end()
+" Plugin
+Plug 'ctrlpvim/ctrlp.vim' " File finder
+Plug 'dikiaap/minimalist' " Darker color scheme
+Plug 'editorconfig/editorconfig-vim' " Additional configuration
+Plug 'scrooloose/nerdtree' " File tree
+Plug 'sheerun/vim-polyglot' " Additional language packs
+Plug 'tpope/vim-fugitive' " Git
+Plug 'hugolgst/vimsence' " Discord RPC
+Plug 'vim-airline/vim-airline' " Tabline improvement
+Plug 'vim-airline/vim-airline-themes' " Additional airline themes
+Plug 'vim-syntastic/syntastic' " Syntax checker
+Plug 'jiangmiao/auto-pairs' " Auto pairs stuff like {}
+call plug#end()
 
 " Colors, Fonts, and Syntax.
 filetype plugin indent on
